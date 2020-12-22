@@ -1,11 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {resetCount} from '../actions'
 
-const ResetButton = () => {
+const ResetButton = ({resetCount}) => {
     return (
-        <div className="reset-button">
+        <div className="reset-button" onClick={resetCount}>
             [ RESET ]
         </div>
     )
 }
 
-export default ResetButton;
+const mapDispatchToProps = {resetCount}
+
+export default connect(null, mapDispatchToProps)(ResetButton);

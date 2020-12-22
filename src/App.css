@@ -23,11 +23,12 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .counter--title {
   font-size: 8rem;
+  margin-top: 3rem;
 }
 
 .counter--count {
@@ -44,11 +45,11 @@ html {
 .increment-button,
 .decrement-button, 
 .reset-button {
-  padding: 10px;
+  padding: 2rem;
   color: white;
   background-color: black;
-  margin: 10px;
-  border-radius: 10px;
+  margin: 1rem;
+  border-radius: 1rem;
   border: 2px solid red;
   font-size: 2rem;
 }
@@ -56,5 +57,5 @@ html {
 .increment-button:active,
 .decrement-button:active, 
 .reset-button:active {
-  transform: translateY(2px);
+  transform: translateY(3px);
 }
